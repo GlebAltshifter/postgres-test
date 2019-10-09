@@ -1,0 +1,12 @@
+version: '3'
+services:
+  pg-docker:
+    image: postgres
+    environment:
+      POSTGRES_DB: docker-dbname
+      POSTGRES_USER: docker-user
+      POSTGRES_PASSWORD: docker-password
+    ports:
+      - 5432:5432
+    # volumes: 
+      # - $HOME/docker/volumes/postgres:/var/lib/postgresql/data 
